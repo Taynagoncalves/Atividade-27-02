@@ -1,0 +1,18 @@
+/*Curso de Desenvolviemento de Sistema
+Professora - Júlia
+SENAI
+---------------------------------------------------------------------------------------------
+OBJETIVO: Função que verifique se há estoque suficiente de um produto para uma compra.
+---------------------------------------------------------------------------------------------
+*/
+ 
+function estoque(produto, quantidade, estoque){
+    var estoque = quantidade - estoque 
+    if (estoque >= 0){
+        return "Produto Disponivel"
+    } else {
+        return "Produto Indisponivel"
+    }
+console.log("Produto Disponivel", estoque ("Arroz", 10, 5));
+console.log("Produto Indisponivel", estoque ("Feijão", 10, 5));
+}
